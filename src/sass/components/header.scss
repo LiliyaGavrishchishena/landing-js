@@ -1,0 +1,74 @@
+.header {
+  background-image: linear-gradient(
+      to right,
+      rgba(24, 24, 25, 0.7),
+      rgba(24, 24, 25, 0.7)
+    ),
+    url('../../images/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 790px;
+  margin-bottom: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 150px;
+}
+
+.logo {
+  @extend %link;
+  display: block;
+  font-weight: 700;
+  color: $font-color;
+
+  span {
+    color: $accent-color;
+  }
+}
+
+.nav-list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  padding: 0;
+  border: 2px solid transparent;
+
+  a {
+    @extend %link;
+    font-size: 14px;
+    color: $font-color;
+    font-weight: 700;
+    padding: 9px 15px;
+    margin: 0;
+    height: 100%;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.nav-item-active {
+  color: $accent-color;
+}
+
+.header-section {
+  text-align: center;
+  color: $font-color;
+}
+
+.header-slogan {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 auto 32px;
+  padding: 0;
+}

@@ -1,2 +1,18 @@
+/*
+   Import partials below
+*/
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/extras';
 @import 'normalize.scss';
 @import 'base.scss';
+
+// Components
+@import 'components/container';
+@import 'components/header.scss';
+@import 'components/services.scss';
+@import 'components/team.scss';
+@import 'components/portfolio.scss';
+@import 'components/pricing.scss';
+@import 'components/contact.scss';
+@import 'components/footer.scss';

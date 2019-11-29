@@ -1,0 +1,12 @@
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%link {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
