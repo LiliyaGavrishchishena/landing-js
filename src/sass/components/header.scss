@@ -18,7 +18,7 @@
   align-items: baseline;
   font-size: 30px;
   padding: 10px;
-  margin-bottom: 150px;
+  margin-bottom: 300px;
 }
 
 .logo {
@@ -51,8 +51,21 @@
     margin: 0;
     height: 100%;
 
+    &:after {
+      background-color: $accent-color;
+      display: block;
+      content: '';
+      height: 2px;
+      width: 0%;
+      transition: width 0.2s linear;
+    }
+
     &:hover {
       color: $accent-color;
+
+      &:after {
+        width: 100%;
+      }
     }
   }
 }
