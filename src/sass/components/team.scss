@@ -1,0 +1,16 @@
+.team {
+  margin-bottom: 82px;
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  &-list {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+  }
+}
