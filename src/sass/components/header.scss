@@ -21,7 +21,7 @@
   margin-bottom: 300px;
 }
 
-.logo {
+.nav__logo {
   @extend %link;
   display: block;
   font-weight: 700;
@@ -32,13 +32,13 @@
   }
 }
 
-.nav-list {
+.nav__list {
   @extend %list;
   display: flex;
   justify-content: center;
 }
 
-.nav-item {
+.nav__item {
   padding: 0;
   border: 2px solid transparent;
 
@@ -70,18 +70,34 @@
   }
 }
 
-.nav-item__active {
+.nav__item--active {
   color: $accent-color;
 }
 
-.header-section {
+.nav__link--active {
+  color: $accent-color;
+}
+
+.header__section {
   text-align: center;
   color: $font-color;
 }
 
-.header-slogan {
-  font-size: 18px;
+.header__slogan {
+  font-size: 20px;
   font-weight: 400;
   margin: 0 auto 32px;
   padding: 0;
+  animation-name: appear;
+  animation-duration: 3s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
