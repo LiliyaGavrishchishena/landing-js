@@ -70,11 +70,7 @@
   }
 }
 
-.nav__item--active {
-  color: $accent-color;
-}
-
-.nav__link--active {
+.nav__item .nav__link--active {
   color: $accent-color;
 }
 
