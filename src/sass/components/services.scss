@@ -64,10 +64,6 @@
       content: '';
       margin-bottom: 15px;
     }
-
-    &:hover {
-      color: $accent-color;
-    }
   }
 }
 
@@ -93,4 +89,17 @@
 
 .list__item--editing::before {
   background-image: url('../../images/svg/editing.svg');
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+.service__list--item.over {
+  border: 2px dashed #000;
 }
