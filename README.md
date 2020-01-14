@@ -1,1 +1,1 @@
-[Link](https://liliyagavrishchishena.github.io/landing-js/.).
+[Link](https://liliyagavrishchishena.github.io/landing-js/.)
